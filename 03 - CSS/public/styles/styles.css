@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #6D7B93;
+}
+
+h1,h2,h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #1F3E72;
+    /* #EEF3FF */
+}
+
+h2 {
+    font-size: 30px;
+}
+/* header Start*/
+
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    inset: 0;
+    background-color: rgba(255, 255, 255,80%);
+    backdrop-filter: blur(2px);
+}
+header .header-position{
+    display: flex;
+    position: absolute;
+}
+header .logo-header{
+    width: 60%;
+}
+header .logo-header h1{
+    margin-left: 20px;
+}
+header .elements-header{
+    width: 40%;
+}
+header li {
+    margin-left: 20px;
+    display: inline;
+}
+
+
+footer {
+    background-color: #EEF3FF;
+}
+
+/* Header End */
+
+.first-part{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.first-part .first-part-left{
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.first-part .first-part-left .schedule-vaccine{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-color: #EEF3FF;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 20px rgba(1, 71, 101, 0.2);
+
+}
+.first-part .first-part-right{
+    width: 50%;
+}
+.first-part .first-part-right img{
+    width: 100%;
+}

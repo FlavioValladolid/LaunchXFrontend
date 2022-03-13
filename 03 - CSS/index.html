@@ -9,100 +9,112 @@
 </head>
 <body>
     <header>
-        <h3>Vacunación</h3>
-        <ul>
-            <li>Base de datos</li>
-            <li>Educación</li>
-            <li>Noticias</li>
-            <li>Regulación</li>
-            <li>Mayor información</li> <!-- Button -->
-        </ul>
+            <div class="logo-header">
+                <h1>Vacunación</h3>
+            </div>
+            <div class="elements-header">
+                <ul>
+                    <li>Base de datos</li>
+                    <li>Educación</li>
+                    <li>Noticias</li>
+                    <li>Regulación</li>
+                    <li>Mayor información</li> <!-- Button -->
+                </ul>
+            </div>
     </header>
     <main>
+            <div class="first-part">
+                <div class="first-part-left">
+                    <h2>Pelea contra el virus con Vacunas</h1>
+                    <p>Para reducir la cantidad de contagiados es necesario que cada persona reciba su vacuna, ¡No dejes que tu familia se contagie!</p>
+                    <p>Mejor protección</p> <!-- Add Icon-->
+                    <p class="header-button">Vacunas selectas</p> <!-- Add Icon-->
         
-        <section>
-            <h1>Pelea contra el virus con Vacunas</h1>
-            <p>Para reducir la cantidad de contagiados es necesario que cada persona reciba su vacuna, ¡No dejes que tu familia se contagie!</p>
-            <p>Mejor protección</p> <!-- Add Icon-->
-            <p>Vacunas selectas</p> <!-- Add Icon-->
+                    <h3>Programa tus vacunas</h3>
+                    <div class="schedule-vaccine">
+                        <table>
+                            <tr>
+                                <th>Ubicación</th>
+                                <th>Fecha</th>
+                                <th>Tipo de vacuna</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <!--Add Location Drop Down List-->
+                                    <!-- <label for="cars">Choose a car:</label> -->
+                                    <select name="ubicacion" id="ubicacion">
+                                    <option value="c0">-</option>
+                                    <option value="c1">Ciudad de México</option>
+                                    <option value="c2">Guadalajara</option>
+                                    <option value="c3">Monterrey</option>
+                                    <option value="c4">Tijuana</option>
+                                    </select>  
+                                </th>
+                                <th>
+                                    <!--Add Date list-->
+                                    <input type="date" id="fecha1" name="fecha1">
+                                </th>
+                                <th>
+                                    <!--Add Vaccines Drop Down List-->
+                                    <select name="vacuna" id="vacuna">
+                                        <option value="v0">-</option>
+                                        <option value="v1">Pfizer</option>
+                                        <option value="v2">CanSino</option>
+                                        <option value="v3">Johnson & Johnson</option>
+                                        <option value="v4">AstraZeneca</option>
+                                        <option value="v5">Moderna</option>
+                                        <option value="v6">Sputnik V</option>
+                                        <option value="v7">Covaxin</option>
+                                        <option value="v8">Abdala</option>
+                                        </select> 
+                                </th>
+                                <th>
+                                    <input type="button" id="boton1" name="boton1" value="Subir" onclick="alert('Este botón no hace nada');">
+                                </th>   
+                            </tr>
+                        </table>
+                    </div>
 
-            <h3>Programa tus vacunas</h3>
-            <section>
-                <table>
-                    <tr>
-                        <th>Ubicación</th>
-                        <th>Fecha</th>
-                        <th>Tipo de vacuna</th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <!--Add Location Drop Down List-->
-                            <!-- <label for="cars">Choose a car:</label> -->
-                            <select name="ubicacion" id="ubicacion">
-                            <option value="c0">-</option>
-                            <option value="c1">Ciudad de México</option>
-                            <option value="c2">Guadalajara</option>
-                            <option value="c3">Monterrey</option>
-                            <option value="c4">Tijuana</option>
-                            </select>  
-                        </th>
-                        <th>
-                            <!--Add Date list-->
-                            <input type="date" id="fecha1" name="fecha1">
-                        </th>
-                        <th>
-                            <!--Add Vaccines Drop Down List-->
-                            <select name="vacuna" id="vacuna">
-                                <option value="v0">-</option>
-                                <option value="v1">Pfizer</option>
-                                <option value="v2">CanSino</option>
-                                <option value="v3">Johnson & Johnson</option>
-                                <option value="v4">AstraZeneca</option>
-                                <option value="v5">Moderna</option>
-                                <option value="v6">Sputnik V</option>
-                                <option value="v7">Covaxin</option>
-                                <option value="v8">Abdala</option>
-                                </select> 
-                        </th>
-                        <th>
-                            <input type="button" id="boton1" name="boton1" value="Subir" onclick="alert('Este botón no hace nada');">
-                        </th>   
-                    </tr>
-                </table>
-            </section>
-            <section>
-                 <!-- add vaccines  -->
-            </section>
-            <section>
-                <h2>¿Por qué deberías vacunarte?</h2>
-                <p>Vacúnate para protegerte a ti y a tu familia. Además, los lee los siguientes beneficios de la vacunación:</p>
-            </section>
-            <!-- Vaccine benefits -->
-            <section>
+                </div>
+                <div class="first-part-right">
+                    <img src="./public/img/first-part-photo.jpg" alt="nurse">
+                </div>
+            </div>
+            <div class="second-part">
                 <section>
-                    <h3>Minimiza el espercimiento del virus</h3>
-                    <p>Se ha comprobado la efectividad de la vacunación para prevenir la infección del Coronavirus.</p>
+                     <!-- add vaccines logos  -->
                 </section>
-                <section>
-                    <h3>Genera anticuerpos</h3>
-                    <p>Se ha probado que la vacuna COVID-19 ayuda a formar una respuesta por el sistema inmune</p>
-                </section>
-                <section>
-                    <h3>Protege a las personas a tu alrededor</h3>
-                    <p>Dentro de los beneficios de la vacunación para COVID-19, incluye la protección de las personas a tu alrededor.</p>
-                </section>
-                <section>
-                    <h3>Crea inmunidad grupal</h3>
-                    <p>La vacunación contra el COVID-19 también ayuda en la inmunidad colectiva</p>
-                </section>
-            </section>
-        </section>
+                <div>
+                    <h2>¿Por qué deberías vacunarte?</h2>
+                    <p>Vacúnate para protegerte a ti y a tu familia. Además, los lee los siguientes beneficios de la vacunación:</p>
+                </div>
+                <!-- Vaccine benefits -->
+                <div>
+                    <div>
+                        <h3>Minimiza el espercimiento del virus</h3>
+                        <p>Se ha comprobado la efectividad de la vacunación para prevenir la infección del Coronavirus.</p>
+                    </div>
+                    <div>
+                        <h3>Genera anticuerpos</h3>
+                        <p>Se ha probado que la vacuna COVID-19 ayuda a formar una respuesta por el sistema inmune</p>
+                    </div>
+                    <div>
+                        <h3>Protege a las personas a tu alrededor</h3>
+                        <p>Dentro de los beneficios de la vacunación para COVID-19, incluye la protección de las personas a tu alrededor.</p>
+                    </div>
+                    <div>
+                        <h3>Crea inmunidad grupal</h3>
+                        <p>La vacunación contra el COVID-19 también ayuda en la inmunidad colectiva</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section>
             <!-- Agregar imagen -->
 
             <section>
-                <h3>Preparations Before Vaccine</h3>
+                <h2>Preparaciones para antes de vacunarte</h2>
 
                 <p>El éxito de la vacuna está fuertemente influenciado en la fuerza del sistema inmune del cuerpo. Por lo tanto, hay varias cosas que pueden realizarse para que la vacuna para el COVID-19 sea más efectiva: </p>
 
@@ -117,7 +129,7 @@
         </section>
 
         <section>
-            <h3>Contacto de emergencia</h3>
+            <h2>Contacto de emergencia</h2>
             <p>Contacta con uno de los contactos debajo si tú o tus familiares sienten un malestar o tienen síntomas similares a los síntomas del Covid-19, asegurarse que cuidarse a si mismo antes de reportarnos:</p>
             <section> 
                 <!-- icono de llamada -->
