@@ -48,11 +48,22 @@ header .logo-header h1{
 header .elements-header{
     width: 40%;
 }
-header li {
+header .elements-header ul li{
     margin-left: 20px;
-    display: inline;
+    display: inline-flex;
+    align-items: center;
 }
-
+.button-info{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    background: #1F3E72;
+    border-radius: 5px;
+    color: white;
+}
 
 footer {
     background-color: #EEF3FF;
@@ -71,6 +82,10 @@ footer {
     padding-left: 40px;
     padding-right: 40px;
 }
+.first-part .first-part-left h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .first-part .first-part-left .schedule-vaccine{
     display: flex;
     height: 70px;
@@ -79,7 +94,7 @@ footer {
     margin-top: 100px;
     align-items: center;
     justify-content: center;
-    box-shadow: 10px 10px 20px rgba(1, 71, 101, 0.2);
+    box-shadow: 5px 5px 20px rgba(1, 71, 101, 0.2);
 
 }
 .first-part .first-part-right{
@@ -87,4 +102,61 @@ footer {
 }
 .first-part .first-part-right img{
     width: 100%;
+}
+.second-part{
+
+}
+.second-part .vaccines-logos{
+    display: flex;
+    width: 100%;
+}
+.second-part .vaccines-logos .astra,
+.second-part .vaccines-logos .jj,
+.second-part .vaccines-logos .moderna,
+.second-part .vaccines-logos .pfizer{
+    padding: 40px;
+    width: 25%;
+    filter: grayscale(100%) contrast(5%) brightness(170%);
+}
+.second-part h2,
+.second-part p{
+    margin: 10px;
+}
+.vaccines-advantages{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.advantage-1,
+.advantage-2,
+.advantage-3,
+.advantage-4{
+    margin: 20px;
+    margin-top: 50px;
+    padding: 25px;
+    width: 22%;
+    height: 200px;
+    box-shadow: 5px 5px 20px rgba(1, 71, 101, 0.2);
+    border-radius: 10px;
+}
+.third-part{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.third-part .third-part-left{
+    width: 50%;
+}
+.third-part .third-part-left img{
+    width: 100%;
+}
+.third-part .third-part-right{
+    padding: 50px;
+    width: 50%;
+    background-color: red;
+}
+.third-part .third-part-right h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

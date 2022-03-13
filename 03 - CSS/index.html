@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programa de Vacunación</title>
     <link rel="stylesheet" href="./public/styles/styles.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -18,7 +19,9 @@
                     <li>Educación</li>
                     <li>Noticias</li>
                     <li>Regulación</li>
-                    <li>Mayor información</li> <!-- Button -->
+                    <li>
+                        <a href="#" class="button-info">Mayor información</a>
+                    </li> <!-- Button -->
                 </ul>
             </div>
     </header>
@@ -81,81 +84,85 @@
                 </div>
             </div>
             <div class="second-part">
-                <section>
+                <div class="vaccines-logos">
+                    <img src="./public/img/astrazeneca-logo.png" alt="astrazeneca" class="astra">
+                    <img src="./public/img/Johnson-and-Johnson-logo.png" alt="j&j" class="jj">
+                    <img src="./public/img/moderna-logo.png" alt="moderna" class="moderna">
+                    <img src="./public/img/pfizer-logo.png" alt="pfizer" class="pfizer">
+                </div>    
                      <!-- add vaccines logos  -->
-                </section>
                 <div>
                     <h2>¿Por qué deberías vacunarte?</h2>
                     <p>Vacúnate para protegerte a ti y a tu familia. Además, los lee los siguientes beneficios de la vacunación:</p>
                 </div>
                 <!-- Vaccine benefits -->
-                <div>
-                    <div>
+                <div class="vaccines-advantages">
+                    <div class="advantage-1">
                         <h3>Minimiza el espercimiento del virus</h3>
                         <p>Se ha comprobado la efectividad de la vacunación para prevenir la infección del Coronavirus.</p>
                     </div>
-                    <div>
+                    <div class="advantage-2">
                         <h3>Genera anticuerpos</h3>
                         <p>Se ha probado que la vacuna COVID-19 ayuda a formar una respuesta por el sistema inmune</p>
                     </div>
-                    <div>
+                    <div class="advantage-3">
                         <h3>Protege a las personas a tu alrededor</h3>
                         <p>Dentro de los beneficios de la vacunación para COVID-19, incluye la protección de las personas a tu alrededor.</p>
                     </div>
-                    <div>
+                    <div class="advantage-4">
                         <h3>Crea inmunidad grupal</h3>
                         <p>La vacunación contra el COVID-19 también ayuda en la inmunidad colectiva</p>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="third-part">
+                <div class="third-part-left">
+                    <img src="./public/img/third-part-photo.jpg" alt="">
+                </div>
+                <div class="third-part-right">
+                    <h2>Preparaciones para antes de vacunarte</h2>
+        
+                    <p>El éxito de la vacuna está fuertemente influenciado en la fuerza del sistema inmune del cuerpo. Por lo tanto, hay varias cosas que pueden realizarse para que la vacuna para el COVID-19 sea más efectiva: </p>
+        
+                    <ul>
+                        <li>Evitar bebidas alcólicas</li>
+                        <li>Evitar el estrés</li>
+                        <li>Come comida saludable</li>
+                        <li>Dormir suficiente</li>
+                        <li>Ejercítate</li>
+                    </ul>
+                </div>
+            </div>
 
-        <section>
-            <!-- Agregar imagen -->
 
-            <section>
-                <h2>Preparaciones para antes de vacunarte</h2>
-
-                <p>El éxito de la vacuna está fuertemente influenciado en la fuerza del sistema inmune del cuerpo. Por lo tanto, hay varias cosas que pueden realizarse para que la vacuna para el COVID-19 sea más efectiva: </p>
-
-                <ul>
-                    <li>Evitar bebidas alcólicas</li>
-                    <li>Evitar el estrés</li>
-                    <li>Come comida saludable</li>
-                    <li>Dormir suficiente</li>
-                    <li>Ejercítate</li>
-                </ul>
-            </section>
-        </section>
-
-        <section>
+        <div>
             <h2>Contacto de emergencia</h2>
             <p>Contacta con uno de los contactos debajo si tú o tus familiares sienten un malestar o tienen síntomas similares a los síntomas del Covid-19, asegurarse que cuidarse a si mismo antes de reportarnos:</p>
-            <section> 
+            <div> 
                 <!-- icono de llamada -->
                 <h4>Teléfono</h4>
                 <p>021.123.145.14</p>
                 <button>Llamar ahora</button>
-            </section>
-            <section> 
+            </div>
+            <div> 
                 <!-- icono de chat -->
                 <h4>Chat</h4>
                 <p>021.123.145.14</p>
                 <button>Chatear ahora</button>
-            </section>
-            <section> 
+            </div>
+            <div> 
                 <!-- icono de video -->
                 <h4>Videollamada</h4>
                 <p>021.123.145.14</p>
                 <button>Hacer videollamada</button>
-            </section>
-            <section>
+            </div>
+            <div>
                 <!-- ícono de mensaje  -->
                 <h4>Mensaje</h4>
                 <p>021.123.145.14</p>
                 <button>Mensajear ahora</button>
-            </section>
-        </section>
+            </div>
+        </div>
     </main>
 
     <footer>
