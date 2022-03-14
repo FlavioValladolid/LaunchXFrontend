@@ -154,9 +154,23 @@ footer {
 .third-part .third-part-right{
     padding: 50px;
     width: 50%;
-    background-color: red;
 }
 .third-part .third-part-right h2{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+/* Fourth Element*/
+.fourth-part{
+    width: 100%;
+    display: flex;
+}
+.fourth-part .fourth-part-left{
+    width: 50%;
+}
+.fourth-part .fourth-part-right{
+    width: 50%;
+}
+.fourth-part .fourth-part-right img{
+    width: 100%;
 }
