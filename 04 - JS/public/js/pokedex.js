@@ -7,6 +7,7 @@ const fetchPokemon = () => {
         if (res.status != "200") {
             console.log(res);
             pokeImage("./public/img/pikachuSleeping.png");
+            pokeNameF("Pokémon no encontrado");
         } 
         else {
             return res.json();
@@ -16,9 +17,10 @@ const fetchPokemon = () => {
         console.log(data);
         let pokeImg = data.sprites.front_default;
         pokeImage(pokeImg);
-        console.log(pokeImg);   
-            // Nombre
-            // tipo de pokemon
+        console.log(pokeImg);  
+        pokeNameF(pokeName); 
+        pokeType(data["types"][0].type["name"]);
+
             // estadisticas
             // movimientos
     });
@@ -28,7 +30,12 @@ const pokeImage = (url) => {
     pokePhoto.src = url;
 }
 
-// const pokeNameF = (url) => {
-//     const pokeNameOutput = document.getElementById("pokeNames");
-//     pokeNameOutput.innerHTML = "NewText";
-// }
+const pokeNameF = (url) => {
+    const pokeNameOutput = document.getElementById("pokeNames");
+    pokeNameOutput.innerHTML = url;
+}
+
+const pokeType = (url) => {
+    const pokeTypeOutput = document.getElementById("pokeTypes");
+    pokeTypeOutput.innerHTML = url;
+}
