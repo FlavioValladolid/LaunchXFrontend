@@ -5,13 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <link rel="stylesheet" href="./public/styles/styles.css">
 </head>
 <body>
-    <h1>Pokedex LaunchX</h1>
-    <input type="text" placeholder="Pikachu" id="pokeName" name="pokeName">
-    <img src="./public/img/pokeball.png" alt="" alt="Pokemon" id="pokeImg" width="150px"><br>
-    <button onclick="fetchPokemon()">Cambiar pokemon</button>
-    
+    <!-- <h1>Pokedex LaunchX 1</h1> -->
+    <div class="main-container">
+        <div class="top-container">
+            <div class="top-item-left">
+                <div class="item-1">
+                    <div class="item-1-1">
+                    </div>
+                </div>
+                <div class="item-2">
+                    <div class="item-2-1"></div>
+                    <div class="item-2-2"></div>
+                    <div class="item-2-3"></div>
+                </div>
+            </div>
+            <div class="top-item-center">
+                <h1>Pokedex</h1>
+            </div>
+            <div class="top-item-right">
+            </div>
+        </div>
+        <div class="mid-container">
+            <div class="pokeball">
+                <img src="./public/img/pokeball.png" alt="Pokemon" id="pokeImg" width="150px">
+            </div>
+            <!-- <h1 id="pokeNames">Nombre</h1> -->
+        </div>
+        <div class="bottom-container">
+            <div class="bottom-container">
+                <div class="input-box">
+                    <input type="text" placeholder="Pikachu" id="pokeName" name="pokeName">
+                </div>
+                <div class="finder-button">
+                    <button onclick="fetchPokemon()">Cambiar pokemon</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 <footer>
     <script src="./public/js/pokedex.js"></script>
