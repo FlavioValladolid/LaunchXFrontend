@@ -20,19 +20,19 @@ const fetchPokemon = () => {
         console.log(pokeImg);  
         pokeNameF(pokeName); 
         pokeType(data["types"][0].type["name"]);
-        for (let statElement = 0; statElement < data["stats"].length; statElement++) {
-            // Stat name
-            console.log("Stat Name: " + data["stats"][statElement].stat["name"])
-            // Base stat
-            console.log("Base Stat: "+data["stats"][statElement].base_stat)
-            // effort stat
-            console.log("Effort: "+data["stats"][statElement].effort)
-            // const element = array[i];
+        pokeStat(data);
+            // movimientos
+        // pokeMove(data);
+        for (let moveElement = 0; moveElement < data["moves"].length; moveElement++) {
+            if (moveElement < 6) {
+                pokeMove(data["moves"][moveElement].move["name"],"pokeMoveName"+moveElement);
+            }
             
         }
-
-            // estadisticas
-            // movimientos
+        // console.log(data["moves"][0].move["name"]);
+        // pokeMove(data["moves"][0].move["name"])
+        hideMidContainer();
+        modifyBottomContainer();
     });
 }
 const pokeImage = (url) => {
@@ -49,7 +49,41 @@ const pokeType = (url) => {
     const pokeTypeOutput = document.getElementById("pokeTypes");
     pokeTypeOutput.innerHTML = url;
 }
-const pokeStat = (url) => {
-    const pokeStatOutput = document.getElementById("pokeStats");
+
+const pokeStatName = (url,statElement) => {
+    return(url["stats"][statElement].stat["name"]);
+}
+const pokeStatBase = (url,statElement) => {
+    return "Base: "+url["stats"][statElement].base_stat;
+}
+const pokeStatEffort = (url,statElement) => {
+    return "Effort: "+url["stats"][statElement].effort;
+}
+
+const pokeStatO = (url,idName) => {
+    const pokeStatOutput = document.getElementById(idName);
     pokeStatOutput.innerHTML = url;
+}
+const pokeStat = (url) => {
+    for (let statElement = 0; statElement < url["stats"].length; statElement++) {
+        // Stat name
+        pokeStatO(pokeStatName(url,statElement),"pokeStatName"+statElement);
+        // Base stat
+        pokeStatO(pokeStatBase(url,statElement),"pokeStatBase"+statElement);
+        // // effort stat
+        pokeStatO(pokeStatEffort(url,statElement),"pokeStatEffort"+statElement);
+    }
+}
+const pokeMove = (url,idName) => {
+    const pokeMoveOutput = document.getElementById(idName);
+    pokeMoveOutput.innerHTML = url;
+}
+
+const hideMidContainer = () => {
+    const hideElement = document.getElementById("midContainer");
+    hideElement.style.display = "flex";
+}
+const modifyBottomContainer = () => {
+    const modifyBotContainer = document.getElementById("botContainer");
+    modifyBotContainer.style.height = "15%";
 }
